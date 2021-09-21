@@ -40,18 +40,22 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 #header, #topnav, #intro, #container, #footer, #copyright{margin:0 auto;}
 
+p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0;}
+
 /*----------------------------------------------Header-------------------------------------*/
 
-#header{padding:40px 0;}
+#header{padding:40px 0 20px 10px;}
 
-#header hgroup{display:block; float:left; width:auto; clear:right;}
-#header hgroup h1, #header hgroup h2{margin:0; font-weight:normal; text-transform:none;}
+#header hgroup div {display: flex; justify-content: flex-start; align-items: flex-start; flex-flow: column;}
+#header hgroup{display:flex; flex-direction: row; width:auto; clear:right;}
+#header hgroup h1, #header hgroup h2{margin:10px 0 0 10px; font-weight:normal; text-transform:none;}
 #header hgroup h1{font-size:2em;}
 #header hgroup h2{font-size:1em;}
 
-#header #header-contact{display:block; float:right; width:auto; clear:right;}
+#header #header-contact div {display: flex; justify-content: flex-start; align-items: flex-start; flex-flow: column;}
+#header #header-contact {display:flex; flex-direction: row; width:auto; clear:right;}
 #header #header-contact ul{margin-top:15px;}
-#header #header-contact li{display:inline; margin:0 0 0 15px; padding:0 0 0 15px; border-left:1px solid #C0BAB6;}
+#header #header-contact li{display:inline; margin:0 0 0 5px; padding:0 0 0 5px; border-left:none;}
 #header #header-contact li:first-child{margin:0; padding:0; border:none;}
 
 /*----------------------------------------------------------------------------------------*/
@@ -175,4 +179,35 @@ div.ex1 {
     width: 1000px;
     margin: auto;
     border: 0;
+}
+
+.logo-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row nowrap;
+      width: 100%;
+      height: auto;
+}
+
+.logo-area img {
+      width: 46%;
+      height: auto;
+      padding: 15px;
+}
+
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+}
+
+ul p {
+      font-size: 1.0em;
+      line-height: normal;
+      padding: 3px;
+}
+
+ul img {
+      padding-right: 5px;
 }
