@@ -24,12 +24,23 @@ div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-al
 
 body{font-family:Arial, Helvetica, sans-serif;}
 
-h1, h2, h3, h4, h5, h6{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+h1 {padding: 10px 0 10px 0; font-size:1.50em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
 
+h2 {margin: .8em 0 2em 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+
+h3 {padding: 10px 10px 10px 10px; font-size:1.50em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+
+h4 {margin:0 0 15px 0; padding: 0; font-size:1.6em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:1.5; text-transform:none;}  /* used in footer phone #  */
+
+h5{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+
+h6{ margin:0; font-size:1.2em; padding: .1em 0 1.3em .5em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+
+/*  -- h7 is now h4  */
 h7{margin:0 0 30px 0; font-size:1.3em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
-
+/* -------- WEEDING OUT THESE BAD H CALLS  h8 is now h2 ----------- */
 h8{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
-
+/* -- h9 is now h4 and h2 in blue bar other than top one  --*/
 h9{margin:0 0 30px 0; font-size:1.6em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:1.5; text-transform:none;}
 
 h10{margin:0 0 30px 0; font-size:1.0em; font-family: Arial, Helvetica, sans-serif; font-weight:italic; line-height:normal; text-transform:italic; color:#003366; text-align: center;}
@@ -40,7 +51,7 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 #header, #topnav, #intro, #container, #footer, #copyright{margin:0 auto;}
 
-p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0;}
+p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0; font-family: Arial, Helvetica, sans-serif; font-weight:normal; text-transform:none;}
 
 /*----------------------------------------------Header-------------------------------------*/
 
@@ -169,19 +180,23 @@ h11 {
 
 /* nudge images down */
 
-.moveimage
-{
+.moveimage {
     position: relative;
     top: 9px;
 }
 
-div.ex1 {
+div .ex1 {
     width: 1000px;
     margin: auto;
     border: 0;
 }
 
-.logo-area {
+
+.bottom-pad {
+      padding: 0 0 30px 0;
+}
+
+.logo-area, .logo-consulting {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -196,18 +211,59 @@ div.ex1 {
       padding: 15px;
 }
 
-ul {
-      list-style-type: none;
+.logo-consulting img {
+      width: auto;
+      height: 230px;
+      padding: 30px 85px 0 85px;
+
+}
+
+.one_quarter:first-child img{
+      width: 19em;
+      height: auto;
+}
+
+.one_half:first-child {
       margin: 0;
       padding: 0;
 }
 
+.one_half-consult {
+      margin: 0;
+      padding: 8px 0 30px 47.5%;
+      width: auto;
+}
+
+.three_quarter img{
+      width: 72%;
+      padding: 0 0 1em 0;
+}
+
+/* aids in flow of bulleted lists on home page */
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 10px 0 15px;
+}
+
 ul p {
-      font-size: 1.0em;
+      font-size: .98em;
       line-height: normal;
-      padding: 3px;
+      padding: 1px 0 1px 0;
 }
 
 ul img {
       padding-right: 5px;
+}
+
+
+/* --- sets up sizes for videos on home page */
+#videos{
+      margin: 0 0 0 0;
+      width: 33.25%;
+}
+
+#color {
+      color: red;
+      padding: 0 .5em .5em 0;
 }
