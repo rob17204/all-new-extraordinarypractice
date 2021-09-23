@@ -191,9 +191,30 @@ div .ex1 {
     border: 0;
 }
 
+.border-reviews {
+      border-bottom: 1px lightgray;
+      border-style: solid;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      padding: 1em 0 1em 0;
+}
+
+.border-bottom {
+      border-bottom: 2px lightgray;
+      border-style: solid;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      padding: 0;
+}
 
 .bottom-pad {
       padding: 0 0 30px 0;
+}
+
+.left {
+      text-align: left;
 }
 
 .logo-area, .logo-consulting {
@@ -218,9 +239,25 @@ div .ex1 {
 
 }
 
-.one_quarter:first-child img{
+.one_quarter:first-child img {
       width: 19em;
       height: auto;
+}
+
+.one_quarter-consult {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      height: auto;
+}
+
+.one_quarter-consult img {
+      width: auto;
+      height: 155px;
+      max-height: 175px;
+      margin: 0;
+      padding: 0 0 10px 0;
 }
 
 .one_half:first-child {
@@ -237,6 +274,27 @@ div .ex1 {
 .three_quarter img{
       width: 72%;
       padding: 0 0 1em 0;
+}
+
+.whole-consult {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row nowrap;
+      width: 100%;
+      height: auto;
+}
+
+.fine-print {
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column nowrap;
+      padding: 1em 0 1em 1em;
+      margin: 3em 0 0 0;
+      border: 1px lightgray;
+      border-radius: 10px;
+      border-style: solid;
 }
 
 /* aids in flow of bulleted lists on home page */
@@ -266,4 +324,29 @@ ul img {
 #color {
       color: red;
       padding: 0 .5em .5em 0;
+}
+
+#logos img {
+      width: auto;
+      height: 8em;
+      margin: 0;
+      padding: 2em 0 0 0;
+}
+
+#testimonials {
+      padding: 4.5em 0 2.5em 0;
+      border-bottom: 1px lightgray;
+      border-style: solid;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+}
+
+#manual {
+      display: flex;
+      justify-content: center;
+      align-items: space-between;
+      flex-flow: column;
+      padding-top: 4em;
+      text-align: center;
 }
