@@ -24,11 +24,11 @@ div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-al
 
 body{font-family:Arial, Helvetica, sans-serif;}
 
-h1 {padding: 10px 0 10px 0; font-size:1.50em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+h1 {padding: 10px 0 10px 0; font-size:1.50em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;} /*  Used as first headline of page as page topic */
 
-h2 {margin: .8em 0 2em 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+h2 {margin: .8em 0 2em 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none; }
 
-h3 {padding: 10px 10px 10px 10px; font-size:1.50em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+h3 {padding: 10px 0 10px 0; margin: 0; font-size:2em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;} /* used in bluebars other than first one of page  */
 
 h4 {margin:0 0 15px 0; padding: 0; font-size:1.6em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:1.5; text-transform:none;}  /* used in footer phone #  */
 
@@ -59,7 +59,7 @@ p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0; font-family: 
 
 #header hgroup div {display: flex; justify-content: flex-start; align-items: flex-start; flex-flow: column;}
 #header hgroup{display:flex; flex-direction: row; width:auto; clear:right;}
-#header hgroup h1, #header hgroup h2{margin:10px 0 0 10px; font-weight:normal; text-transform:none;}
+#header hgroup h1, #header hgroup h2{margin: 0 0 0 10px; font-weight:normal; text-transform:none;}
 #header hgroup h1{font-size:2em;}
 #header hgroup h2{font-size:1em;}
 
@@ -209,8 +209,32 @@ div .ex1 {
       padding: 0;
 }
 
+.bordered {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 100%;
+      padding: 10px;
+      border: 1px solid blue;
+      border-radius: 8px;
+      color:#003366;
+}
+
 .bottom-pad {
       padding: 0 0 30px 0;
+}
+
+.fine-print {
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column nowrap;
+      padding: 1em 0 1em 1em;
+      margin: 3em 0 0 0;
+      border: 1px lightgray;
+      border-radius: 10px;
+      border-style: solid;
 }
 
 .left {
@@ -237,6 +261,34 @@ div .ex1 {
       height: 230px;
       padding: 30px 85px 0 85px;
 
+}
+
+.one_fifth, .two_fifth, .three_fifth, .four_fifth {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 0;
+}
+
+.one_fifth {
+      width: 19.5%;
+      height: auto;
+}
+
+.two_fifth {
+      width: 39%;
+      height: auto;
+}
+
+.three_fifth {
+      width: 58.5%;
+      height: auto;
+}
+
+.four_fifth {
+      width: 78%;
+      height: auto;
 }
 
 .one_quarter:first-child img {
@@ -271,12 +323,34 @@ div .ex1 {
       width: auto;
 }
 
+.topic-image {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-flow: column;
+      padding-top: .8em;
+}
+
+.topic-image img {
+      width: 34em;
+      padding-bottom: .5em;
+}
+
+.topic-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      margin: 0;
+      padding: 2em 0 0 0;
+}
+
 .three_quarter img{
       width: 72%;
       padding: 0 0 1em 0;
 }
 
-.whole-consult {
+.whole-consult, .whole-speaking {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -285,16 +359,10 @@ div .ex1 {
       height: auto;
 }
 
-.fine-print {
-      height: auto;
-      align-items: center;
-      justify-content: center;
-      flex-flow: column nowrap;
-      padding: 1em 0 1em 1em;
-      margin: 3em 0 0 0;
-      border: 1px lightgray;
-      border-radius: 10px;
-      border-style: solid;
+.whole-speaking {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
 }
 
 /* aids in flow of bulleted lists on home page */
@@ -321,9 +389,47 @@ ul img {
       width: 33.25%;
 }
 
+#sample-video img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: auto;
+      height: 15em;
+      padding: 2em 0 .5em 8em;
+}
+
+/* other identifiers  */
+#article-description p{
+      font-size: 1.3em;
+      color: #666666;
+      padding: 0 0 .5em 0;
+      margin: 0;
+}
+
 #color {
       color: red;
       padding: 0 .5em .5em 0;
+}
+
+#headlines {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+}
+
+#hot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 75%;
+      height: auto;
+      margin: 0 0 0 12%;
+      background-color: #376c7c;
 }
 
 #logos img {
@@ -331,6 +437,21 @@ ul img {
       height: 8em;
       margin: 0;
       padding: 2em 0 0 0;
+}
+
+#speaker-page h2 {
+      color: #743432;
+      padding: .4em 0 .8em 0;
+      margin: 0;
+      text-align: center;
+}
+
+#speaker-page h3{
+      color: #9c673a;
+      padding: .5em 0 0 0 ;
+      margin: 0;
+      text-decoration: underline;
+      text-align: center;
 }
 
 #testimonials {
