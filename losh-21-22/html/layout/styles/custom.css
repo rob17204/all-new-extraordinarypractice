@@ -213,6 +213,7 @@ div .ex1 {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: row;
       width: 90%;
       height: 100%;
       padding: 10px;
@@ -221,8 +222,41 @@ div .ex1 {
       color:#003366;
 }
 
+.border-product {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 99%;
+      height: 100%;
+      padding: 10px;
+      margin: 0;
+      border: 1px solid blue;
+      border-radius: 8px;
+      color:#003366;
+}
+
 .bottom-pad {
-      padding: 0 0 30px 0;
+      padding-bottom: 30px;
+}
+
+.column {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      width: 47.5%;
+      height: auto;
+}
+
+.column img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      padding: 4em 0 3em 0;
+      margin: 0;
 }
 
 .fine-print {
@@ -291,6 +325,10 @@ div .ex1 {
       height: auto;
 }
 
+.left-pad {
+      padding-left: 1em;
+}
+
 .one_quarter:first-child img {
       width: 19em;
       height: auto;
@@ -323,6 +361,23 @@ div .ex1 {
       width: auto;
 }
 
+.pay-buttons {
+      width: 99%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row nowrap;
+}
+
+.right-pad {
+      padding-right: 1.5em;
+}
+
+.top-pad {
+      padding-top: 1.2em;
+}
+
 .topic-image {
       display: flex;
       justify-content: flex-start;
@@ -350,7 +405,7 @@ div .ex1 {
       padding: 0 0 1em 0;
 }
 
-.whole-consult, .whole-speaking {
+.whole-consult, .whole-speaking, .whole-product {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -439,6 +494,16 @@ ul img {
       padding: 2em 0 0 0;
 }
 
+#second {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      padding: 3em 0 3em 0;
+      margin: 0;
+}
+
 #speaker-page h2 {
       color: #743432;
       padding: .4em 0 .8em 0;
@@ -452,6 +517,10 @@ ul img {
       margin: 0;
       text-decoration: underline;
       text-align: center;
+}
+
+#steps p {
+      font-size: 1.35em;
 }
 
 #testimonials {
