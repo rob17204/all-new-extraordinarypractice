@@ -8,7 +8,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
-div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
+div.wrapper, .wrapper100{display:block; width:100%; height:auto; margin:0; padding:0; text-align:left; word-wrap:break-word;}
 /* ---------------------------------------------header color / blue & gray -----------------*/
 .row1, .row1 a{color:#FFFFFF; background-color:#003366;}
 /* ---------------------------------------------navigation ends-------------------------*/
@@ -55,19 +55,67 @@ p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0; font-family: 
 
 /*----------------------------------------------Header-------------------------------------*/
 
-#header{padding:40px 0 20px 10px;}
+#header{padding:20px 0 20px 10px;}
 
-#header hgroup div {display: flex; justify-content: flex-start; align-items: flex-start; flex-flow: column;}
-#header hgroup{display:flex; flex-direction: row; width:auto; clear:right;}
-#header hgroup h1, #header hgroup h2{margin: 0 0 0 10px; font-weight:normal; text-transform:none;}
-#header hgroup h1{font-size:2em;}
-#header hgroup h2{font-size:1em;}
+#header {
+      display:flex;
+      flex-direction: row;
+      width:100%;
+      clear:right;
+}
+#header h1{
+      margin: 0 0 0 10px;
+      font-weight:normal;
+      text-transform:none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+}
 
-#header #header-contact div {display: flex; justify-content: flex-start; align-items: flex-start; flex-flow: column;}
-#header #header-contact {display:flex; flex-direction: row; width:auto; clear:right;}
-#header #header-contact ul{margin-top:15px;}
-#header #header-contact li{display:inline; margin:0 0 0 5px; padding:0 0 0 5px; border-left:none;}
-#header #header-contact li:first-child{margin:0; padding:0; border:none;}
+#header h2 {
+      margin: 0 0 0 10px;
+      font-weight:normal;
+      text-transform:none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+
+}
+
+#header h2{
+      font-size:2em;
+}
+#header h3{
+      font-size:1em;
+}
+
+#header #header-contact div {
+      display: flex; justify-content:
+      flex-end; align-items: flex-end;
+      flex-flow: column;
+}
+#header #header-contact {
+      display:flex;
+      flex-direction: row;
+      width:auto;
+      clear:right;
+}
+#header #header-contact ul{
+      margin-top:15px;
+}
+#header #header-contact li{
+      display:inline;
+      margin:0 0 0 5px;
+      padding:10px 0 0 5px;
+      border-left:none;
+}
+#header #header-contact li:first-child{
+      margin:0;
+      padding:0;
+      border:none;
+}
 
 /*----------------------------------------------------------------------------------------*/
 /*-----------------------------------------Navigation-------------------------------------*/
@@ -294,7 +342,20 @@ div .ex1 {
       width: auto;
       height: 230px;
       padding: 30px 85px 0 85px;
+}
 
+.top-logo {
+      height: auto;
+      width: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row wrap;
+}
+
+
+.top-logo img {
+      padding-right: .5em;
 }
 
 .one_fifth, .two_fifth, .three_fifth, .four_fifth {
@@ -372,6 +433,13 @@ div .ex1 {
 
 .right-pad {
       padding-right: 1.5em;
+}
+
+.row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
 }
 
 .top-pad {
@@ -467,6 +535,18 @@ ul img {
       padding: 0 .5em .5em 0;
 }
 
+#column {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 0 10px 0;
+
+}
+
 #headlines {
       display: flex;
       align-items: center;
@@ -492,6 +572,12 @@ ul img {
       height: 8em;
       margin: 0;
       padding: 2em 0 0 0;
+}
+
+#photo-fix {
+      display: flex;
+      width: 55em;
+      height: auto;
 }
 
 #second {
