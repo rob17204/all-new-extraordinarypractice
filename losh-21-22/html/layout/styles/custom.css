@@ -30,6 +30,18 @@ h2 {margin: .8em 0 2em 0; font-size:1.8em; font-family: Arial, Helvetica, sans-s
 
 h3 {padding: 10px 0 10px 0; margin: 0; font-size:2em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;} /* used in bluebars other than first one of page  */
 
+/* script type for about us page */
+h3 span {
+      padding: 10px 0 0 0;
+	font-family: 'Brush Script MT', cursive;
+	font-size: 2em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 0;
+      margin: 0;
+}
+
 h4 {margin:0 0 15px 0; padding: 0; font-size:1.6em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:1.5; text-transform:none;}  /* used in footer phone #  */
 
 h5{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
@@ -215,17 +227,6 @@ input, textarea, select{resize:none; outline:none;}
   text-indent: -20px ;
 }
 
-/* script type for about us page */
-
-h11 {
-	font-family: 'Brush Script MT', cursive;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26px;
-}
-
 /* nudge images down */
 
 .moveimage {
@@ -237,6 +238,11 @@ div .ex1 {
     width: 1000px;
     margin: auto;
     border: 0;
+}
+
+.add-size {
+      font-size:  1.85em;
+      line-height: 1.2em;
 }
 
 .border-reviews {
@@ -390,6 +396,15 @@ div .ex1 {
       padding-left: 1em;
 }
 
+.magic-image img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75%;
+      height: auto;
+      padding: 0 5px 0 5px;
+}
+
 .one_quarter:first-child img {
       width: 19em;
       height: auto;
@@ -431,6 +446,12 @@ div .ex1 {
       flex-flow: row nowrap;
 }
 
+.reach a{
+      font-size: 1.85em;
+      line-height: 1.3em;
+      color: blue;
+}
+
 .right-pad {
       padding-right: 1.5em;
 }
@@ -440,6 +461,12 @@ div .ex1 {
       justify-content: flex-start;
       align-items: center;
       flex-direction: row;
+}
+
+.tele {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
 }
 
 .top-pad {
@@ -473,7 +500,7 @@ div .ex1 {
       padding: 0 0 1em 0;
 }
 
-.whole-consult, .whole-speaking, .whole-product {
+.whole-consult, .whole-speaking, .whole-product, .whole-about, .whole-contact {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -523,11 +550,19 @@ ul img {
 }
 
 /* other identifiers  */
+#about p {
+      font-size: 1em;
+}
+
 #article-description p{
       font-size: 1.3em;
       color: #666666;
       padding: 0 0 .5em 0;
       margin: 0;
+}
+
+#bright {
+      color: blue;
 }
 
 #color {
@@ -545,6 +580,11 @@ ul img {
       margin: 0;
       padding: 0 0 10px 0;
 
+}
+
+#contact-manual {
+      text-align: center;
+      padding: 8.5em 0 8.5em 0;
 }
 
 #headlines {
